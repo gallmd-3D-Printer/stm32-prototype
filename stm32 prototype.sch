@@ -370,20 +370,6 @@ F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/do
 	1    4150 10350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 9650 4050 9650
-Wire Wire Line
-	5200 9750 4250 9750
-Wire Wire Line
-	4050 10150 4050 9650
-Connection ~ 4050 9650
-Wire Wire Line
-	4050 9650 5200 9650
-Wire Wire Line
-	4250 10150 4250 9750
-Connection ~ 4250 9750
-Wire Wire Line
-	4250 9750 3550 9750
 $Comp
 L power:GND #PWR0109
 U 1 1 5BDD60EB
@@ -2133,7 +2119,7 @@ F 3 "" H 21900 5850 50  0001 C CNN
 	1    21900 5850
 	1    0    0    -1  
 $EndComp
-Text GLabel 21000 5500 0    50   Input ~ 0
+Text GLabel 20550 5500 0    50   Input ~ 0
 MEM_CHIP_SELECT
 $Comp
 L power:+3.3V #PWR0106
@@ -2579,4 +2565,31 @@ $EndComp
 Connection ~ 12300 6250
 Wire Wire Line
 	12300 6250 12050 6250
+$Comp
+L Device:R R49
+U 1 1 5C09E47A
+P 20700 5500
+F 0 "R49" V 20600 5500 50  0000 C CNN
+F 1 "0R" V 20700 5500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 20630 5500 50  0001 C CNN
+F 3 "~" H 20700 5500 50  0001 C CNN
+	1    20700 5500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	20850 5500 21000 5500
+Wire Wire Line
+	3550 9750 4050 9750
+Wire Wire Line
+	4250 10150 4250 9650
+Connection ~ 4250 9650
+Wire Wire Line
+	4250 9650 5200 9650
+Wire Wire Line
+	3550 9650 4250 9650
+Wire Wire Line
+	4050 10150 4050 9750
+Connection ~ 4050 9750
+Wire Wire Line
+	4050 9750 5200 9750
 $EndSCHEMATC
