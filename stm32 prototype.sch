@@ -2788,4 +2788,92 @@ F 3 "" H 2850 6850 50  0001 C CNN
 $EndComp
 Text Notes 2200 6300 0    79   ~ 0
 POWER OK LEDS
+Text GLabel 14450 8650 0    50   Input ~ 0
+STATUS_BIT0
+Text GLabel 14450 8550 0    50   Input ~ 0
+STATUS_BIT1
+Text GLabel 14450 8450 0    50   Input ~ 0
+STATUS_BIT2
+Text GLabel 14450 8350 0    50   Input ~ 0
+STATUS_BIT3
+Text GLabel 14450 8250 0    50   Input ~ 0
+STATUS_BIT4
+Text GLabel 14450 8150 0    50   Input ~ 0
+STATUS_BIT5
+Text GLabel 14450 8050 0    50   Input ~ 0
+STATUS_BIT6
+Text GLabel 14450 7950 0    50   Input ~ 0
+STATUS_BIT7
+$Comp
+L Connector_Generic:Conn_01x10 J4
+U 1 1 5C3119D0
+P 9500 10150
+F 0 "J4" H 9580 10142 50  0000 L CNN
+F 1 "Conn_01x10" H 9580 10051 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 9500 10150 50  0001 C CNN
+F 3 "~" H 9500 10150 50  0001 C CNN
+	1    9500 10150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6800 9750 2    50   Input ~ 0
+FTDI_DTR
+Text GLabel 6800 9850 2    50   Input ~ 0
+FTDI_DCR
+Text GLabel 6800 9950 2    50   Input ~ 0
+FTDI_DCD
+Text GLabel 6800 10050 2    50   Input ~ 0
+FTDI_RI
+Text GLabel 6800 10550 2    50   Input ~ 0
+FTDI_CBUS2
+Text GLabel 6800 10650 2    50   Input ~ 0
+FTDI_CBUS3
+Text GLabel 6800 10750 2    50   Input ~ 0
+FTDI_CBUS4
+Text GLabel 9300 9750 0    50   Input ~ 0
+FTDI_DTR
+Text GLabel 9300 9850 0    50   Input ~ 0
+FTDI_RI
+Text GLabel 9300 9950 0    50   Input ~ 0
+FTDI_DCR
+Text GLabel 9300 10050 0    50   Input ~ 0
+FTDI_DCD
+Text GLabel 9300 10150 0    50   Input ~ 0
+FTDI_CBUS4
+Text GLabel 9300 10250 0    50   Input ~ 0
+FTDI_CBUS2
+Text GLabel 9300 10350 0    50   Input ~ 0
+FTDI_CBUS3
+$Comp
+L power:+5V #PWR0155
+U 1 1 5C3158AD
+P 9300 10450
+F 0 "#PWR0155" H 9300 10300 50  0001 C CNN
+F 1 "+5V" V 9315 10578 50  0000 L CNN
+F 2 "" H 9300 10450 50  0001 C CNN
+F 3 "" H 9300 10450 50  0001 C CNN
+	1    9300 10450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0156
+U 1 1 5C315DEA
+P 9300 10550
+F 0 "#PWR0156" H 9300 10400 50  0001 C CNN
+F 1 "+3.3V" V 9315 10678 50  0000 L CNN
+F 2 "" H 9300 10550 50  0001 C CNN
+F 3 "" H 9300 10550 50  0001 C CNN
+	1    9300 10550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5C316BFC
+P 9300 10650
+F 0 "#PWR0157" H 9300 10400 50  0001 C CNN
+F 1 "GND" H 9305 10477 50  0000 C CNN
+F 2 "" H 9300 10650 50  0001 C CNN
+F 3 "" H 9300 10650 50  0001 C CNN
+	1    9300 10650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
