@@ -38,9 +38,9 @@ F 4 " TSX-3225 26.0000MF09Z-AC3 " H 13300 6900 50  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13300 6700 14200 6700
+	13300 6700 13850 6700
 Wire Wire Line
-	13300 7100 14200 7100
+	13300 7100 13850 7100
 Wire Wire Line
 	14200 7100 14200 6950
 Wire Wire Line
@@ -2788,21 +2788,21 @@ F 3 "" H 2850 6850 50  0001 C CNN
 $EndComp
 Text Notes 2200 6300 0    79   ~ 0
 POWER OK LEDS
-Text GLabel 14450 8650 0    50   Input ~ 0
-STATUS_BIT0
-Text GLabel 14450 8550 0    50   Input ~ 0
-STATUS_BIT1
-Text GLabel 14450 8450 0    50   Input ~ 0
-STATUS_BIT2
-Text GLabel 14450 8350 0    50   Input ~ 0
-STATUS_BIT3
-Text GLabel 14450 8250 0    50   Input ~ 0
-STATUS_BIT4
-Text GLabel 14450 8150 0    50   Input ~ 0
-STATUS_BIT5
-Text GLabel 14450 8050 0    50   Input ~ 0
-STATUS_BIT6
 Text GLabel 14450 7950 0    50   Input ~ 0
+STATUS_BIT0
+Text GLabel 14450 8050 0    50   Input ~ 0
+STATUS_BIT1
+Text GLabel 14450 8150 0    50   Input ~ 0
+STATUS_BIT2
+Text GLabel 14450 8250 0    50   Input ~ 0
+STATUS_BIT3
+Text GLabel 14450 8350 0    50   Input ~ 0
+STATUS_BIT4
+Text GLabel 14450 8450 0    50   Input ~ 0
+STATUS_BIT5
+Text GLabel 14450 8550 0    50   Input ~ 0
+STATUS_BIT6
+Text GLabel 14450 8650 0    50   Input ~ 0
 STATUS_BIT7
 $Comp
 L Connector_Generic:Conn_01x10 J4
@@ -2879,4 +2879,25 @@ $EndComp
 Wire Wire Line
 	8550 8800 8550 8700
 Connection ~ 8550 8700
+$Comp
+L Device:R R?
+U 1 1 5C048B74
+P 13850 6900
+F 0 "R?" H 13920 6946 50  0000 L CNN
+F 1 "1MR" H 13920 6855 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 13780 6900 50  0001 C CNN
+F 3 "~" H 13850 6900 50  0001 C CNN
+	1    13850 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 6750 13850 6700
+Connection ~ 13850 6700
+Wire Wire Line
+	13850 6700 14200 6700
+Wire Wire Line
+	13850 7050 13850 7100
+Connection ~ 13850 7100
+Wire Wire Line
+	13850 7100 14200 7100
 $EndSCHEMATC
