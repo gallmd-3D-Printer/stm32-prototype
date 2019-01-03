@@ -302,8 +302,6 @@ F 3 "~" H 23950 7450 50  0001 C CNN
 	1    23950 7450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	22000 7600 23950 7600
 $Comp
 L power:GND #PWR0133
 U 1 1 5C1DABF4
@@ -979,7 +977,7 @@ SWO
 Text GLabel 16450 6500 2    50   Input ~ 0
 NRST
 Text GLabel 20200 10800 0    50   Input ~ 0
-PC15_STATUS
+PC15
 NoConn ~ 16450 6400
 NoConn ~ 15950 6400
 Text GLabel 22400 9000 2    50   Input ~ 0
@@ -1190,13 +1188,13 @@ F 3 "" H 20000 14700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	20200 10800 20600 10800
-Text GLabel 20000 12400 2    50   Input ~ 0
+Text GLabel 19200 13100 0    50   Input ~ 0
 PA0
-Text GLabel 20000 13400 2    50   Input ~ 0
+Text GLabel 20000 13800 2    50   Input ~ 0
 PA10_ST_TXD
-Text GLabel 20000 13300 2    50   Input ~ 0
+Text GLabel 20000 13900 2    50   Input ~ 0
 PA9_ST_RXD
-Text GLabel 20000 13500 2    50   Input ~ 0
+Text GLabel 20000 13700 2    50   Input ~ 0
 PA11_ST_RTS
 Text GLabel 20000 13600 2    50   Input ~ 0
 PA12_CTS
@@ -1208,79 +1206,77 @@ Text GLabel 19200 13900 0    50   Input ~ 0
 PA5_SPI1_SCK
 Text GLabel 19200 13800 0    50   Input ~ 0
 PA4_SPI1_NSS
-Text GLabel 20000 12500 2    50   Input ~ 0
-PA1
-Text GLabel 20000 12600 2    50   Input ~ 0
-PA2
-Text GLabel 20000 12700 2    50   Input ~ 0
-PA3
-Text GLabel 20000 13200 2    50   Input ~ 0
-PA8_MCO
-Text GLabel 20000 13700 2    50   Input ~ 0
-PA15
-Text GLabel 20000 13800 2    50   Input ~ 0
-PB0
-Text GLabel 20000 13900 2    50   Input ~ 0
-PB1
-Text GLabel 20000 14200 2    50   Input ~ 0
-PB5_I2C1_SMBA
-Text GLabel 20000 14400 2    50   Input ~ 0
-PB7_I2C1_SDA
-Text GLabel 20000 14300 2    50   Input ~ 0
-PB6_I2C1_SCL
-Text GLabel 20000 14000 2    50   Input ~ 0
-PB3
-Text GLabel 20000 14100 2    50   Input ~ 0
-PB4
-Text GLabel 20000 14500 2    50   Input ~ 0
-PB8
-Text GLabel 20000 14600 2    50   Input ~ 0
-PB9
-Text GLabel 19200 13700 0    50   Input ~ 0
-PB10
-Text GLabel 19200 14200 0    50   Input ~ 0
-PB11
-Text GLabel 19200 14300 0    50   Input ~ 0
-PB12
-Text GLabel 19200 14400 0    50   Input ~ 0
-PB13
-Text GLabel 19200 14500 0    50   Input ~ 0
-PB14
-Text GLabel 19200 14600 0    50   Input ~ 0
-PB15
-Text GLabel 19200 13600 0    50   Input ~ 0
-PC15_STATUS
-Text GLabel 20000 13100 2    50   Input ~ 0
-PC14
-Text GLabel 20000 13000 2    50   Input ~ 0
-PC13
-Text GLabel 20000 12900 2    50   Input ~ 0
-PC12
-Text GLabel 20000 12800 2    50   Input ~ 0
-PC11
-Text GLabel 19200 13500 0    50   Input ~ 0
-PC10
-Text GLabel 19200 13400 0    50   Input ~ 0
-PC9
-Text GLabel 19200 13300 0    50   Input ~ 0
-PC8
 Text GLabel 19200 13200 0    50   Input ~ 0
-PC7
-Text GLabel 19200 13100 0    50   Input ~ 0
-PC6
-Text GLabel 19200 13000 0    50   Input ~ 0
-PC5
+PA1
+Text GLabel 19200 13300 0    50   Input ~ 0
+PA2
+Text GLabel 19200 13400 0    50   Input ~ 0
+PA3
+Text GLabel 20000 14000 2    50   Input ~ 0
+PA8_MCO
+Text GLabel 20000 13500 2    50   Input ~ 0
+PA15
+Text GLabel 19200 13500 0    50   Input ~ 0
+PB0
+Text GLabel 19200 14200 0    50   Input ~ 0
+PB1
+Text GLabel 20000 12900 2    50   Input ~ 0
+PB5_I2C1_SMBA
+Text GLabel 20000 12700 2    50   Input ~ 0
+PB7_I2C1_SDA
+Text GLabel 20000 12800 2    50   Input ~ 0
+PB6_I2C1_SCL
+Text GLabel 20000 13000 2    50   Input ~ 0
+PB4
+Text GLabel 20000 12600 2    50   Input ~ 0
+PB8
+Text GLabel 20000 12500 2    50   Input ~ 0
+PB9
+Text GLabel 19200 14300 0    50   Input ~ 0
+PB10
+Text GLabel 19200 14400 0    50   Input ~ 0
+PB11
+Text GLabel 19200 14600 0    50   Input ~ 0
+PB12
+Text GLabel 19200 14500 0    50   Input ~ 0
+PB13
+Text GLabel 20000 14600 2    50   Input ~ 0
+PB14
+Text GLabel 20000 14500 2    50   Input ~ 0
+PB15
 Text GLabel 19200 12900 0    50   Input ~ 0
-PC4
+PC15
 Text GLabel 19200 12800 0    50   Input ~ 0
+PC14
+Text GLabel 20000 12400 2    50   Input ~ 0
+PC13
+Text GLabel 20000 13200 2    50   Input ~ 0
+PC12
+Text GLabel 20000 13300 2    50   Input ~ 0
+PC11
+Text GLabel 20000 13400 2    50   Input ~ 0
+PC10
+Text GLabel 20000 14100 2    50   Input ~ 0
+PC9
+Text GLabel 20000 14200 2    50   Input ~ 0
+PC8
+Text GLabel 20000 14300 2    50   Input ~ 0
+PC7
+Text GLabel 20000 14400 2    50   Input ~ 0
+PC6
+Text GLabel 19200 13600 0    50   Input ~ 0
+PC5
+Text GLabel 19200 13700 0    50   Input ~ 0
+PC4
+Text GLabel 19200 13000 0    50   Input ~ 0
 PC3
-Text GLabel 19200 12700 0    50   Input ~ 0
-PC2
 Text GLabel 19200 12600 0    50   Input ~ 0
-PC1
+PC2
 Text GLabel 19200 12500 0    50   Input ~ 0
+PC1
+Text GLabel 19200 12700 0    50   Input ~ 0
 PC0
-Text GLabel 19200 12400 0    50   Input ~ 0
+Text GLabel 20000 13100 2    50   Input ~ 0
 PD2
 $Comp
 L Device:C C1
@@ -1331,14 +1327,28 @@ F 3 "" H 23950 8300 50  0001 C CNN
 $EndComp
 Connection ~ 23950 7900
 Connection ~ 23950 8300
-Connection ~ 23950 7600
-Text GLabel 11450 7350 0    50   Input ~ 0
-PC15_STATUS
 Wire Wire Line
 	23950 7600 23950 7900
-Text GLabel 23550 7600 1    50   Input ~ 0
+Text GLabel 22400 7600 2    50   Input ~ 0
 PA0
 Connection ~ 13300 6900
 Wire Wire Line
 	13300 6900 13400 6900
+Text GLabel 11450 7350 0    50   Input ~ 0
+PB12
+Text GLabel 23950 7700 0    50   Input ~ 0
+PC13
+Wire Wire Line
+	22000 7600 22400 7600
+$Comp
+L power:GND #PWR0105
+U 1 1 5C31B366
+P 19200 12400
+F 0 "#PWR0105" H 19200 12150 50  0001 C CNN
+F 1 "GND" V 19205 12272 50  0000 R CNN
+F 2 "" H 19200 12400 50  0001 C CNN
+F 3 "" H 19200 12400 50  0001 C CNN
+	1    19200 12400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
